@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/hp/Desktop/Kifiya%20AIM/week%2012/workspace/Enhanced-Credit-Risk-Probability-Model-for-Alternative-Data/mlruns/0/models/m-22b7384bbb604d96b8ce30a42e4464f9/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.1
+mlflow_version: 3.2.0
+model_id: m-22b7384bbb604d96b8ce30a42e4464f9
+model_size_bytes: 1359
+model_uuid: m-22b7384bbb604d96b8ce30a42e4464f9
+prompts: null
+run_id: 80edbbf7464c4fd8bc17c4e5244733f8
+utc_time_created: '2025-08-17 13:09:45.658022'

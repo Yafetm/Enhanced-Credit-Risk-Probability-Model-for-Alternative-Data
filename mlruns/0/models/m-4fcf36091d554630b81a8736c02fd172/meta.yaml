@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/hp/Desktop/Kifiya%20AIM/week%2012/workspace/Enhanced-Credit-Risk-Probability-Model-for-Alternative-Data/mlruns/0/models/m-4fcf36091d554630b81a8736c02fd172/artifacts
+creation_timestamp: 1755436491620
+experiment_id: '0'
+last_updated_timestamp: 1755436504018
+model_id: m-4fcf36091d554630b81a8736c02fd172
+model_type: null
+name: logistic_regression
+source_run_id: 64962ac5151e4235ba283b9fc5edfcaa
+status: 2
+status_message: null

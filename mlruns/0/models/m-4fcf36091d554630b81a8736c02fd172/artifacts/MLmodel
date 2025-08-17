@@ -1,0 +1,47 @@
+artifact_path: file:///C:/Users/hp/Desktop/Kifiya%20AIM/week%2012/workspace/Enhanced-Credit-Risk-Probability-Model-for-Alternative-Data/mlruns/0/models/m-4fcf36091d554630b81a8736c02fd172/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.1
+is_signature_from_type_hint: false
+mlflow_version: 3.2.0
+model_id: m-4fcf36091d554630b81a8736c02fd172
+model_size_bytes: 7802
+model_uuid: m-4fcf36091d554630b81a8736c02fd172
+prompts: null
+run_id: 64962ac5151e4235ba283b9fc5edfcaa
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: json_object
+signature:
+  inputs: '[{"type": "double", "name": "Recency", "required": true}, {"type": "double",
+    "name": "Frequency", "required": true}, {"type": "double", "name": "Monetary",
+    "required": true}, {"type": "double", "name": "Amount", "required": true}, {"type":
+    "double", "name": "Value", "required": true}, {"type": "double", "name": "ProductCategory_data_bundles",
+    "required": true}, {"type": "double", "name": "ProductCategory_financial_services",
+    "required": true}, {"type": "double", "name": "ProductCategory_movies", "required":
+    true}, {"type": "double", "name": "ProductCategory_other", "required": true},
+    {"type": "double", "name": "ProductCategory_ticket", "required": true}, {"type":
+    "double", "name": "ProductCategory_transport", "required": true}, {"type": "double",
+    "name": "ProductCategory_tv", "required": true}, {"type": "double", "name": "ProductCategory_utility_bill",
+    "required": true}, {"type": "double", "name": "ChannelId_ChannelId_2", "required":
+    true}, {"type": "double", "name": "ChannelId_ChannelId_3", "required": true},
+    {"type": "double", "name": "ChannelId_ChannelId_5", "required": true}, {"type":
+    "double", "name": "PricingStrategy_1", "required": true}, {"type": "double", "name":
+    "PricingStrategy_2", "required": true}, {"type": "double", "name": "PricingStrategy_4",
+    "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-08-17 13:14:51.894735'

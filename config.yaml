@@ -1,0 +1,5 @@
+data_path: data/raw/data.csv
+rfm_snapshot_date: '2019-02-01'  # Post-latest transaction (2018-11-15 in sample)
+clusters: 3
+model: logistic_regression
+test_size: 0.2

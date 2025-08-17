@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/hp/Desktop/Kifiya%20AIM/week%2012/workspace/Enhanced-Credit-Risk-Probability-Model-for-Alternative-Data/mlruns/0/models/m-21ee642afdda402798d2c228611dacff/artifacts
+creation_timestamp: 1755436991649
+experiment_id: '0'
+last_updated_timestamp: 1755437003516
+model_id: m-21ee642afdda402798d2c228611dacff
+model_type: null
+name: random_forest
+source_run_id: 4d01689c8e9942b3b8a023893663be1d
+status: 2
+status_message: null
