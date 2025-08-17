@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+mlflow
+pytest
+fastapi
+uvicorn
+pydantic
+streamlit
+shap
+optuna
+matplotlib
+seaborn
+black
+flake8
