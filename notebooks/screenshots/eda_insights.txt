@@ -1,0 +1,128 @@
+=== Summary Statistics ===
+              TransactionId        BatchId       AccountId  \
+count                 95662          95662           95662   
+unique                95662          94809            3633   
+top     TransactionId_76871  BatchId_67019  AccountId_4841   
+freq                      1             28           30893   
+mean                    NaN            NaN             NaN   
+std                     NaN            NaN             NaN   
+min                     NaN            NaN             NaN   
+25%                     NaN            NaN             NaN   
+50%                     NaN            NaN             NaN   
+75%                     NaN            NaN             NaN   
+max                     NaN            NaN             NaN   
+
+             SubscriptionId       CustomerId CurrencyCode  CountryCode  \
+count                 95662            95662        95662      95662.0   
+unique                 3627             3742            1          NaN   
+top     SubscriptionId_3829  CustomerId_7343          UGX          NaN   
+freq                  32630             4091        95662          NaN   
+mean                    NaN              NaN          NaN        256.0   
+std                     NaN              NaN          NaN          0.0   
+min                     NaN              NaN          NaN        256.0   
+25%                     NaN              NaN          NaN        256.0   
+50%                     NaN              NaN          NaN        256.0   
+75%                     NaN              NaN          NaN        256.0   
+max                     NaN              NaN          NaN        256.0   
+
+          ProviderId    ProductId     ProductCategory    ChannelId  \
+count          95662        95662               95662        95662   
+unique             6           23                   9            4   
+top     ProviderId_4  ProductId_6  financial_services  ChannelId_3   
+freq           38189        32635               45405        56935   
+mean             NaN          NaN                 NaN          NaN   
+std              NaN          NaN                 NaN          NaN   
+min              NaN          NaN                 NaN          NaN   
+25%              NaN          NaN                 NaN          NaN   
+50%              NaN          NaN                 NaN          NaN   
+75%              NaN          NaN                 NaN          NaN   
+max              NaN          NaN                 NaN          NaN   
+
+              Amount         Value  TransactionStartTime  PricingStrategy  \
+count   9.566200e+04  9.566200e+04                 95662     95662.000000   
+unique           NaN           NaN                 94556              NaN   
+top              NaN           NaN  2018-12-24T16:30:13Z              NaN   
+freq             NaN           NaN                    17              NaN   
+mean    6.717846e+03  9.900584e+03                   NaN         2.255974   
+std     1.233068e+05  1.231221e+05                   NaN         0.732924   
+min    -1.000000e+06  2.000000e+00                   NaN         0.000000   
+25%    -5.000000e+01  2.750000e+02                   NaN         2.000000   
+50%     1.000000e+03  1.000000e+03                   NaN         2.000000   
+75%     2.800000e+03  5.000000e+03                   NaN         2.000000   
+max     9.880000e+06  9.880000e+06                   NaN         4.000000   
+
+         FraudResult  
+count   95662.000000  
+unique           NaN  
+top              NaN  
+freq             NaN  
+mean        0.002018  
+std         0.044872  
+min         0.000000  
+25%         0.000000  
+50%         0.000000  
+75%         0.000000  
+max         1.000000  
+
+=== Missing Values ===
+TransactionId           0
+BatchId                 0
+AccountId               0
+SubscriptionId          0
+CustomerId              0
+CurrencyCode            0
+CountryCode             0
+ProviderId              0
+ProductId               0
+ProductCategory         0
+ChannelId               0
+Amount                  0
+Value                   0
+TransactionStartTime    0
+PricingStrategy         0
+FraudResult             0
+dtype: int64
+
+Percentage of Missing Values:
+TransactionId           0.0
+BatchId                 0.0
+AccountId               0.0
+SubscriptionId          0.0
+CustomerId              0.0
+CurrencyCode            0.0
+CountryCode             0.0
+ProviderId              0.0
+ProductId               0.0
+ProductCategory         0.0
+ChannelId               0.0
+Amount                  0.0
+Value                   0.0
+TransactionStartTime    0.0
+PricingStrategy         0.0
+FraudResult             0.0
+dtype: float64
+
+=== Amount Distribution ===
+Mean Amount: 6717.85, Median Amount: 1000.00
+The Amount column is highly skewed with a long right tail, indicating a few large transactions.
+
+=== Product Category Distribution ===
+Top 3 Categories: {'financial_services': 45405, 'airtime': 45027, 'utility_bill': 1920}
+Number of unique categories: 9
+
+=== Correlation Analysis ===
+Key correlations:
+Amount       Value          0.989692
+             FraudResult    0.557370
+Value        Amount         0.989692
+             FraudResult    0.566739
+FraudResult  Amount         0.557370
+             Value          0.566739
+dtype: float64
+
+=== Outlier Analysis ===
+Number of outliers in Amount: 24441
+Outlier range: -1000000.00 to 9880000.00
+
+=== Transaction Time Analysis ===
+Peak transaction hours: [16, 17, 18]
